@@ -155,7 +155,7 @@ if {[string equal [get_filesets -quiet sources_1] ""]} {
 set obj [get_filesets sources_1]
 # Add local files from the original project (-no_copy_sources specified)
 set files [list \
- [file normalize "${origin_dir}/../bd/example_blog1/example_blog1.bd" ]\
+ [file normalize "${origin_dir}/../myproject_trail/bd/example_blog1/example_blog1.bd" ]\
 ]
 set added_files [add_files -fileset sources_1 $files]
 
