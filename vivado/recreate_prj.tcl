@@ -36,8 +36,8 @@
 proc checkRequiredFiles { origin_dir} {
   set status true
   set files [list \
-   "/home/harish/vivado-project-template-master/bd/example_blog1/example_blog1.bd" \
-   "/home/harish/vivado-project-template-master/bd/example_blog1/hdl/example_blog1_wrapper.vhd" \
+   "/var/lib/jenkins/workspace/myProject/bd/example_blog1/example_blog1.bd" \
+   "/var/lib/jenkins/workspace/myProject/bd/example_blog1/hdl/example_blog1_wrapper.vhd" \
   ]
   foreach ifile $files {
     if { ![file isfile $ifile] } {
