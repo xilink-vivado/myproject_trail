@@ -16,7 +16,7 @@ pipeline {
           submoduleCfg: [],
           userRemoteConfigs: [[
             url: 'https://github.com/xilink-vivado/myproject_trail']]])
-      sh 'cd scripts && vivado -mode batch -source recreate_prj.tcl'
+      sh 'cd vivado && vivado -mode batch -source recreate_prj.tcl'
       }
     }
     stage('Run simulation') {
